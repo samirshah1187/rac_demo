@@ -1,0 +1,252 @@
+{
+  "title": "filter",
+  "data": [
+    {
+      "filter_type": "SORT BY",
+      "filter_options": [
+        {
+          "option_value": "Most Relevant",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Option Two",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "CATEGORY",
+      "filter_options": [
+        {
+          "option_value": "Products",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Opportunity",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Lifestyle",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "MEGABRAND",
+      "filter_options": [
+        {
+          "option_value": "Ethanobotanicals",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Supplements",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Weight Loss",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Cosmetics",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Anti-aging",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Skin Care",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "CONTENT TYPE",
+      "filter_options": [
+        {
+          "option_value": "Image",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-image.svg"
+        },
+        {
+          "option_value": "Video",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-video.svg"
+        },
+        {
+          "option_value": "Document",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-document.svg"
+
+        },
+        {
+          "option_value": "Presentation",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-presentation.svg"
+        },
+        {
+          "option_value": "PDF",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-pdf.svg"
+        },
+        {
+          "option_value": "Audio",
+          "quantity": "25",
+          "color":"",
+          "icon_url":"../../../../../src/assets/images/css/ic-audio.svg"
+        }
+      ]
+    },
+    {
+      "filter_type": "COMPOSITION",
+      "filter_options": [
+        {
+          "option_value": "Composition 1",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Composition 2",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "PEOPLE",
+      "filter_options": [
+        {
+          "option_value": "People Option 1",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "People Option 2",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "COLOR",
+      "filter_options": [
+        {
+          "option_value": "Red",
+          "quantity": "25",
+          "color":"red",
+          "icon_url":""
+        },
+        {
+          "option_value": "Blue",
+          "quantity": "25",
+          "color":"blue",
+          "icon_url":""
+        },
+        {
+          "option_value": "Yellow",
+          "quantity": "25",
+          "color":"yellow",
+          "icon_url":""
+        },
+        {
+          "option_value": "Black",
+          "quantity": "25",
+          "color":"black",
+          "icon_url":""
+        },
+        {
+          "option_value": "White",
+          "quantity": "25",
+          "color":"white",
+          "icon_url":""
+        },
+        {
+          "option_value": "Orange",
+          "quantity": "25",
+          "color":"orange",
+          "icon_url":""
+        },
+        {
+          "option_value": "Pink",
+          "quantity": "25",
+          "color":"pink",
+          "icon_url":""
+        },
+        {
+          "option_value": "Purple",
+          "quantity": "25",
+          "color":"Purple",
+          "icon_url":""
+        },
+        {
+          "option_value": "Grey",
+          "quantity": "25",
+          "color":"grey",
+          "icon_url":""
+        }
+      ]
+    },
+    {
+      "filter_type": "LANGUAGE",
+      "filter_options": [
+        {
+          "option_value": "English",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        },
+        {
+          "option_value": "Spanish",
+          "quantity": "25",
+          "color":"",
+          "icon_url":""
+        }
+      ]
+    }
+  ],
+  "toggleData" : [
+    {
+    "filter_type": "FAVORITES",
+    "isSelected" : false
+    },
+    {
+    "filter_type": "SOCIAL",
+    "isSelected" : false
+    },
+    {
+    "filter_type": "MY CONTENT",
+    "isSelected" : false
+    }
+  ]
+}

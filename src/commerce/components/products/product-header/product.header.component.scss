@@ -1,0 +1,403 @@
+@import "../../../../../src/stylesheets/partials/variables.scss";
+
+  .media-center-header-container{
+    a{
+      text-decoration: none;
+
+    }
+    .header-panel{
+      height: 3.938em;
+      background: rgba(255,255,255,0.93);
+      border-bottom: 2px solid $gray45;
+      position: relative;
+    }
+    .media-center-heading{
+      padding-top: 0.938em;
+      padding-bottom: 1.188em;
+      padding-left: 1.875em;
+      display: inline-block;
+      a{
+        color: $gray-dark;
+      }
+    }
+    .heading-text{
+      display: inline-block;
+      font-size: 1em;
+      font-weight: $proxima-light;
+      letter-spacing: -0.1px;
+      color: $gray-dark;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
+  .heading-text-large{
+    display: inline-block;
+    padding-left: 0.563em;
+    font-size: 1.375em;
+    font-weight: $proxima-thin;
+    letter-spacing: -0.2px;
+    color: $gray-dark;
+    &:after {
+      content:"|";
+      width:0.2em;
+      height:1.5em;
+      padding-left:2.438em;
+      color: $gray45;
+    }
+
+  }
+  .media-header-expandable{
+    padding-top: 0.625em;
+    position: absolute;
+    right: 0;
+    margin-right: 5.063em;
+    display: inline-block;
+  }
+  .dropdown-image-down{
+    height: 1.625em;
+    width: 1.625em;
+    float: right;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+  }
+  .dropdown-image-up{
+    height: 1.625em;
+    width: 1.625em;
+    float: right;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+  }
+
+  .media-dropdown-panel{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: $white;
+    z-index: 1;
+    border-bottom: 2px solid $gray45;
+    a{
+      color:$gray-dark;
+    }
+  }
+
+  .dropdown-category-name{
+    padding-left: 3em;
+    padding-bottom: 1.50em;
+    font-size: 1em;
+    font-weight: $proxima-thin;
+    letter-spacing: -0.1px;
+    color: $gray-dark;
+  }
+
+  .media-center-search{
+    padding-top: 0.750em;
+    position: absolute;
+    right: 0;
+    margin-right: 1.25em;
+    display: inline-block;
+  }
+  .media-center-search-large{
+    padding-top: 1.2em;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    margin-right: 2.2em;
+  }
+  .search-icon{
+    height: 1.250em;
+    width: 1.250em;
+    float: left;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+  }
+  .media-center-icon{
+    height: 1.938em;
+    width: 1.938em;
+    float: left;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+  }
+  .media-nav-large{
+    padding-top: 1.250em;
+    padding-left: 0.7em;
+    display: inline-block;
+    a{
+      color: $gray-dark;
+    }
+  }
+  .media-nav-text{
+    font-size: 1em;
+    padding-left: 1.750em;
+    font-weight: $proxima-light;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $gray-dark;
+  }
+  .search-text{
+    float: right;
+    padding-top: 0.250em;
+    color: $white;
+    font-size: 0.813em;
+    font-weight: normal;
+    line-height: 1.69;
+    letter-spacing: 0.4px;
+  }
+  .text-small-aqua{
+    font-size: 0.813em;
+    font-weight: normal;
+    line-height: 1.23;
+    letter-spacing: 0.4px;
+    padding-left: 0.938em;
+    color: $brand-primary;
+  }
+  .reset{
+    margin: 0;
+    padding: 0;
+  }
+  .search-overlay{
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    // -webkit-backdrop-filter: blur(10px);  
+    background-color: rgba(247, 247, 247, 0.96); /* Black w/opacity */
+    overflow: auto; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+  }
+  .search-content{
+    position: relative;
+    padding: 0 3em 1em;
+    margin: 0;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    // padding: 1em;
+    a{
+      cursor: pointer;
+      color: $gray-dark;
+    }
+  }
+  .close-overlay{
+    height: 35px;
+    width: 36px;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+    position: absolute;
+    top: 56px;
+    right: 45px;
+    font-size: 1.875em;
+    z-index: 11;
+  }
+  .search-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray-light;
+    background: transparent;
+    font-size: 3em;
+    font-weight: 100;
+  }
+  .search{
+    padding: 8em 0 3em 0;
+  }
+
+  .margin-search{
+     margin-bottom: 2em;
+  }
+  
+  .clear-input{
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
+    right: 53px;
+    top: 165px;
+  }
+
+  .tt-dropdown-menu,
+.gist {
+  text-align: left;
+}
+
+.ng-invalid {
+  border-color: red !important;
+}
+
+//typeahead styles starts here  
+
+.typeahead,
+.tt-query,
+.tt-hint {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray-light;
+    background: transparent;
+    font-size: 3em;
+    font-weight: 100;
+    outline: none;
+}
+
+.twitter-typeahead{
+  width: 100%;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          color: #2d2d2d;
+}
+
+.tt-hint{
+  color: $gray-light;
+}
+.tt-menu {
+  position: relative !important;
+  width: 100%;
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #444444;
+  font-weight: 300;
+  background: transparent;
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+//modal styles starts here
+  .modal-content {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05) !important; }
+
+.modal-dialog{
+  width: 100%;
+  -webkit-transform: initial !important;
+          transform: initial !important;
+}
+.modal.fade {
+  -webkit-transition: opacity 1.25s cubic-bezier(0.16, 1.32, 0.91, 1.26);
+  transition: opacity 1.25s cubic-bezier(0.16, 1.32, 0.91, 1.26); }
+
+.modal-backdrop {
+  background: #fff; }
+  .modal-backdrop.in {
+    opacity: .9; }
+
+.modal-open .page-container {
+  -webkit-animation: blur 1s 1 cubic-bezier(0.16, 1.32, 0.91, 1.26);
+          animation: blur 1s 1 cubic-bezier(0.16, 1.32, 0.91, 1.26);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px); }
+  100% {
+    -webkit-filter: blur(6px);
+            filter: blur(6px); } }
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px); }
+  100% {
+    -webkit-filter: blur(6px);
+            filter: blur(6px); } }
+
+.modal-content {
+  border-radius: 0;
+  box-shadow: none;
+  border: none; }
+
+.modal-header{
+    padding: 0;
+    border: none;
+  }
+}
+
+//typeahead styles ends here
+@media screen and (min-width: 318px) and (max-width: 767px) {
+  .media-center-header-container{
+    .header-panel{
+      height: 3.125em;
+    }
+    .media-center-heading{
+      padding-left: 1.2em;
+    }
+    .close-overlay{
+    top: 1em;
+    right: 1em;
+    }
+    .search-content{
+    padding: 0 1.438em 1em;
+    }
+    .search{
+    padding: 6.6em 0 3em 0;
+    }
+    .typeahead,
+    .tt-query,
+    .tt-hint {
+    font-size: 1.375em;
+    }
+    .margin-search{
+      margin-bottom: 1.235em;
+    }
+    .recently-viewed{
+    h5{
+      margin: 2em 0 0 0;
+    }
+    }
+    .clear-input{
+      right: 1.875em;
+    top: 7.500em;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .media-center-header-container{
+    
+    .close-overlay{
+    top: 1.500em;
+    right: 1.438em;
+    }
+    .search-content{
+    padding: 0 1.438em 1em;
+    }
+    .search{
+    padding: 7em 0 3em 0;
+    }
+    .typeahead,
+    .tt-query,
+    .tt-hint {
+    font-size: 1.375em;
+    }
+    .margin-search{
+      margin-bottom: 1.235em;
+    }
+    .recently-viewed{
+    h5{
+      margin: 0;
+    }
+    }
+    .clear-input{
+      right: 1.875em;
+    top: 7.500em;
+    }
+  }
+}
+
+.errorMessage{
+    width: 100%;
+    display: block;
+    background-color: #d0021b;
+    color: #fff;
+    border-radius: 0;
+    display: none;
+}

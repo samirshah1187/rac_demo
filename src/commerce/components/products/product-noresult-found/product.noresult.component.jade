@@ -1,0 +1,20 @@
+.media-noresult-container.clearfix.col-sm-12
+  .row
+    .col-sm-12.category-only-header
+      .category-header-background(ng-style="{'background-image': 'url({{ctrl.bannerUrl}})'}")
+      mediaHeaderComponent
+      .category-name.col-sm-12
+        .row.col-sm-10.reset
+          .col-sm-8.col-md-5.col-lg-12.m-b-2.no-gutter
+            span 0 
+            span.small-font results found for 
+            span "afRLoc"
+          .col-sm-6.col-md-12.search-tips-header.no-gutter
+            h5 try these tips to expand your search:
+          .col-sm-12.m-b-2.no-gutter
+            p.reset Check for spelling errors or typos
+            p.reset Clear search filter options
+            p.reset Use fewer keywords
+        .category-button.col-sm-6.col-md-7
+          button.btn.btn-primary(type='button')
+            span.button-fixed-text SEARCH AGAIN

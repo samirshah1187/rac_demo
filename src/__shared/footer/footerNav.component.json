@@ -1,0 +1,22 @@
+[
+        {
+        "icon_name" : "Facebook",
+        "icon_url" : "https://www.facebook.com",
+        "icon_img" : "../../../src/assets/images/css/facebook.svg"
+        },
+        {
+        "icon_name" : "Twitter",
+        "icon_url" : "https://www.twitter.com",
+        "icon_img" : "../../../src/assets/images/css/twitter.svg"
+        },
+        {
+        "icon_name" : "Instagram",
+        "icon_url" : "https://www.instagram.com",
+        "icon_img" : "../../../src/assets/images/css/instagram.svg"
+        },
+        {
+        "icon_name" : "Pinterest",
+        "icon_url" : "https://www.pinterest.com",
+        "icon_img" : "../../../src/assets/images/css/pintrest.svg"
+        }
+]

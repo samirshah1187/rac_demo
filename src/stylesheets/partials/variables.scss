@@ -1,0 +1,120 @@
+/////////////////////////////////
+// VARIABLES
+/////////////////////////////////
+
+// Fonts
+$font-family-sans-serif: 'proxima-nova', 'source-han-sans-japanese', 'source-han-sans-korean', 'source-han-sans-simplified-c', Helvetica, Arial, sans-serif;
+$headings-font-family: 'proxima-nova', 'source-han-sans-japanese', 'source-han-sans-korean', 'source-han-sans-simplified-c', Helvetica, Arial, sans-serif;
+$proxima-condensed: 'proxima-nova-alt-ext-cond', Helvetica, Arial, sans-serif;
+$proxima-thin: 100;
+$proxima-light: 300;
+$proxima-regular: 400;
+$proxima-semibold: 600;
+$proxima-bold: 700;
+$proxima-condensed-thin: 100;
+
+// Foundational Colors
+$brand-primary:             #008AB0; // Primary Blue
+$blue-light:                #37B0C9; // Blue 1
+$blue-lighter:              #B9E1EA; // Blue 2
+$blue-lightest:             #E7FAFF; // Blue 3
+$blue-dark:                 #00799B; // Blue 4
+
+$gray-black:                #2D2D2D; // Soft Black
+$gray-dark:                 #444444 !default; // Dark Gray
+$gray:                      #727272 !default; // Medium Gray
+$gray-faded:                #777676;
+$gray-light:                #A7A7A7 !default; // Light Gray
+$gray-lighter:              #D1D1D1 !default; // Default BS color keeping for now
+$gray-lightest:             #F7F7F7 !default; // Default BS color keeping for now
+$gray-dull:                 #F2F2F2;
+$gray-white:                #FAFAFA; // Soft White
+$gray-fair:                 #F7F9FA;
+$gray-darker:               #4A4A4A;
+$gray-fader:				#443a3a;
+$gray-chateau:				#a4a5a6;
+
+$white:                     #FFFFFF; // White
+$violet: 					          #D600E0; // violet
+$white-light: 				      #F6F6F6;
+$white-lighter:             #F5F5F5;
+$white-category:            #F7FAFC;
+$fern:                      #6BC56A;
+$gray-border:               #DBDBDB;
+$gray-shop:                 #EAEAEA;
+
+// Accent Colors
+$pink:                      #FF76B9; // Blossom
+$skyblue:					#39AAD5;
+$aqua:                      #1CD8D2; // Aqua
+$light-aqua:                #2bdbd5; 
+$dusk:                	 	  #007298; // Dusk
+$deep-lilac:                #9349B4;
+$light-coral:               #FF8782;
+$blizzard-blue:             #93EDC7;
+$button-blue:               #028fb2;
+$teal-blue:                 #0089af;
+$category-banner-blue:      #079dc7;
+
+// Gradients
+$cayman: linear-gradient(to bottom, $brand-primary 0%,$aqua 100%);
+$sunset: linear-gradient(to bottom, $deep-lilac 0%, $light-coral 100%);
+$seafoam: linear-gradient(to bottom, $aqua 0%, $blizzard-blue 100%);
+$cayman-webkit: -webkit-linear-gradient(top, $brand-primary 0%, $aqua 100%);
+
+// Bootstrap Color Vars (Bootstrap might get dropped... Client doesn't like to work with it and wants to created there own framework...)
+$brand-success:             #5CB85C !default;
+$brand-info:                #5BC0DE !default;
+$brand-warning:             #f0AD4E !default;
+$brand-danger:              #D0021B !default;
+$enable-flex:               false !default;
+
+//social media icon colors
+$facebook-blue:             #3C5A99;
+
+// Spacing
+$gutter-space:              30px;
+
+// $grid-breakpoints: (
+//   // Extra small screen / phone
+//   xs: 0,
+//   // Small screen / phone
+//   sm: 544px,
+//   // Medium screen / tablet
+//   md: 768px,
+//   // Large screen / desktop
+//   lg: 992px,
+//   // Extra large screen / wide desktop
+//   xl: 1200px
+// ) !default;
+
+$grid-breakpoints: (
+  // Small screen / phone
+  sm: 375px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 1024px,
+  // Extra large screen / wide desktop
+  xl: 1440px
+) !default;
+
+//temporary color in header and footer
+$pacific-blue:               #00A6C4;
+$gray-dull-white:            #A2A2A2;
+
+
+// adding colors for account setup styles
+$gray87:                     #dedede;
+$gray210:                    #d2d2d2;
+$gray6a6: 					 #a6a6a6;
+//adding colors for forgot username
+$light-red: #feeeee;
+$red: #f44444;
+$scarlet: #F01616;
+$gray45: #dadada;
+$gray55:#d6d6d6;
+//radio button color variabless
+$radio-aqua : #00fff7;
+$black-radio : #242424;
+$radio-black-shade: #131313;

@@ -1,0 +1,122 @@
+@import "../../../../../src/stylesheets/partials/variables.scss";
+.media-noresult-container{
+    .category-only-header {
+        padding: 0;
+        height: 39em;
+        background: $white;
+    }
+    .category-header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right -12em top -5em;
+    }
+    .small-font {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: $proxima-thin;
+    }
+    .search-tips-header{
+        margin-bottom: 0.813em;
+    }
+    
+    .category-name{
+        font-weight: $proxima-thin;
+        letter-spacing: -0.3px;
+        color: $gray-black;
+        line-height: 1.1;
+    }
+    .category-name .header {
+        padding: 0 0 0.8em 0;
+    }
+    
+    .category-button {
+        padding: 0;
+    }
+    .category-button .btn {
+        border-radius: 3px;
+        font-size: 0.8rem;
+        font-weight: $proxima-semibold;
+        line-height: 1.31;
+        letter-spacing: 1px;
+    }
+    
+    @media screen and (max-width: 767px) and (min-width: 319px) {
+
+        .category-only-header {
+            height: 33em;
+        }
+        .category-header-background {
+        background-position: right -11em top 3em;
+        }
+        
+        .category-name{
+            padding: 3em 0 0 0.75em;
+            font-size: 1.88rem;
+        }
+        
+    }
+
+
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        .category-only-header {
+            height: 49em;
+        }
+        .category-name{
+            padding: 3.375em 0 0 2.9em;
+            font-size: 1.88rem;
+        }
+
+        .productsBanner {
+            background-position: bottom;
+        }
+        
+        .category-button .btn {
+            width: 42%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        .category-only-header {
+            height: 40em;
+        }
+        
+        .category-name{
+            padding: 4em 0 0 3.05em;
+            font-size: 2.37rem;
+        }
+        .category-header-background {
+        background-position: right -15em top -3em;
+        }
+        .category-name .category-content{
+            font-size: 1.4rem;
+        }
+        .category-button .btn {
+            width: 32%;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .category-only-header {
+            height: 39em;
+        }
+        .category-header-background {
+        background-size: contain;
+        background-position: right 10em top 5em;
+        }
+        .category-name{
+            padding: 4em 0 0 4.325em;
+            font-size: 2.37rem;
+        }
+        .category-name .category-content{
+            font-size: 1.4rem;
+        }
+        .category-button .btn {
+            width: 29%;
+        }
+    }
+}

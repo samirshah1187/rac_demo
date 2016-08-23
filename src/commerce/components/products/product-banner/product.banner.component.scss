@@ -1,0 +1,210 @@
+@import "../../../../../src/stylesheets/partials/variables.scss";
+.media-category-banner-container{
+    .category-header{
+        padding: 0;
+        background: #ffffff;
+    }
+    .category-only-header {
+        padding: 0;
+        background: #ffffff;
+    }
+    .category-header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .myContentBanner, .myFavBanner {
+        left: inherit;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .productsBanner, .lifestyleBanner, .opportunityBanner {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .category-name{
+        font-weight: $proxima-thin;
+        letter-spacing: -0.3px;
+        color: $gray-black;
+        line-height: 1.1;
+    }
+    .category-name .header {
+        padding: 0 0 0.8em 0;
+    }
+    .category-name .category-content{
+        padding: 0;
+        margin-bottom: 1.5em;
+        font-size: 1rem;
+        font-weight: $proxima-light;
+        color: $gray-dark;
+    }
+    .category-name .item-count {
+        font-size: 1rem;
+        font-weight: $proxima-light;
+        line-height: 1.94;
+        color: $gray-light;
+    }
+    .category-button {
+        padding: 0;
+    }
+    .category-button .btn {
+        border-radius: 3px;
+        font-size: 0.8rem;
+        font-weight: $proxima-semibold;
+        line-height: 1.31;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 319px) {
+
+        .category-only-header {
+            height: 33em;
+        }
+        .category-only-header .myContentBanner, .category-only-header .myFavBanner {
+            background-size: contain;
+        }
+        .category-header{
+            height: 20.000em;
+        }
+        .category-name{
+            padding: 3em 0 0 0.75em;
+            font-size: 1.88rem;
+        }
+        .category-name .header {
+
+        }
+        .productsBanner, .lifestyleBanner {
+            background-position: bottom;
+        }
+        .opportunityBanner {
+            background-position: left;
+        }
+        .myContentBanner {
+            width: 100%;
+            background-position: 10.5em 0.5em;
+        }
+        .myFavBanner {
+            width: 60%;
+            background-position: 3em -3em;
+        }
+    }
+
+    @media screen and (max-width: 549px) and (min-width: 449px) {
+        .myContentBanner {
+            width: 100%;
+            background-position: 17em -2.5em;
+        }
+    }
+    @media screen and (max-width: 767px) and (min-width: 549px) {
+        .myContentBanner {
+            width: 100%;
+            background-position: 26em -2.5em;
+        }
+        .myFavBanner {
+            width: 60%;
+            background-position: right -3em;
+        }
+    }
+
+    @media screen and (max-width: 1022px) and (min-width: 768px) {
+        .category-only-header {
+            height: 49em;
+        }
+        .category-header{
+            height: 24.688em;
+        }
+        .category-name{
+            padding: 3.375em 0 0 2.9em;
+            font-size: 1.88rem;
+        }
+        .category-only-header .myContentBanner, .category-only-header .myFavBanner {
+            background-size: contain;
+        }
+        .productsBanner {
+            background-position: bottom;
+        }
+        .lifestyleBanner, .opportunityBanner{
+            background-position: left bottom;
+        }
+        .myContentBanner{
+            width: 62%;
+            background-position: 5em -2.5em;
+        }
+        .myFavBanner {
+            width: 53%;
+            background-position: right -6em;
+        }
+        .category-button .btn {
+            width: 42%;
+        }
+    }
+
+    @media screen and (min-width: 1023px) and (max-width: 1439px) {
+        .category-only-header {
+            height: 40em;
+        }
+        .category-header{
+            height: 26.32em;
+        }
+        .category-name{
+            padding: 4em 0 0 3.05em;
+            font-size: 2.37rem;
+        }
+        .category-name .category-content{
+            font-size: 1.4rem;
+        }
+        .productsBanner {
+            background-position: bottom;
+        }
+        .lifestyleBanner, .opportunityBanner{
+            background-position: left bottom;
+        }
+        .myContentBanner{
+            width: 70%;
+            background-position: 11em -5em;
+        }
+        .myFavBanner {
+            width: 53%;
+            background-position: right -9em;
+        }
+        .category-button .btn {
+            width: 32%;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .category-only-header {
+            height: 39em;
+        }
+        .category-header{
+            height: 30.250em;
+        }
+        .category-name{
+            padding: 4em 0 0 4.325em;
+            font-size: 2.37rem;
+        }
+        .refine{
+            margin-left: 2.285em;
+        }
+        .category-name .category-content{
+            font-size: 1.4rem;
+        }
+        .productsBanner, .lifestyleBanner, .opportunityBanner{
+            background-position: left bottom;
+        }
+        .myContentBanner, .myFavBanner {
+            width: 55%;
+            background-position: right -7em;
+        }
+        .myFavBanner {
+            width: 45%;
+            background-position: right -26em;
+        }
+        .category-button .btn {
+            width: 29%;
+        }
+    }
+}

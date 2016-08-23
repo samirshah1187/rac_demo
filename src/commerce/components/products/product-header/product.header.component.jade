@@ -1,0 +1,48 @@
+.media-center-header-container
+  .header-panel.col-sm-12.no-gutter.hidden-lg-up
+    .media-center-heading.col-sm-8
+      .heading-text
+        a(href="#/mediaCenter/list") MEDIA CENTER
+    .media-header-expandable
+      .dropdown(ng-click='ctrl.toggledd();')
+        a.dropdown-toggle(data-toggle='dropdown')
+          .dropdown-image-down(ng-show="!ctrl.dropdown")
+          .dropdown-image-up(ng-show="ctrl.dropdown")
+    .media-center-search.pointer(data-toggle='modal', data-target='#searchModal',ng-click="ctrl.callSearch();")
+      .search-icon
+    .media-dropdown-panel(ng-show="ctrl.dropdown")
+      .dropdown-category-name(ng-click='ctrl.toggledd();') 
+        a(href="#/mediaCenter/mycontent") MY CONTENT
+      .dropdown-category-name(ng-click='ctrl.toggledd();')
+        a(href="#/mediaCenter/myfavorites") MY FAVORITES
+  .header-panel.col-sm-12.no-gutter.hidden-md-down
+    .media-center-heading
+      .media-center-icon
+      .heading-text-large
+        a(href="#/mediaCenter/list") MEDIA CENTER
+    .media-nav-large
+      span.media-nav-text
+        a(href="#/mediaCenter/mycontent") MY CONTENT
+      span.media-nav-text 
+        a(href="#/mediaCenter/myfavorites") MY FAVORITES
+    .media-center-search-large.clearfix.pointer(data-toggle='modal', data-target='#searchModal',ng-click="ctrl.callSearch();")
+      span.text-small-aqua Search Content  
+      .search-icon
+  div(ng-if="ctrl.showSearch")
+    #searchModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='searchModalLabel')
+      .modal-dialog(role='document')
+        .search-overlay(ng-style="{'height':'{{ctrl.searchOverlayHeight}}'}")
+          .modal-header
+            .close-overlay.pointer(data-dismiss='modal', aria-label='Close', ng-click="ctrl.selectedNumber = '';")
+          .search-content.row
+            .search.col-sm-12
+              input.search-input.typeahead(type='text', sf-typeahead='',placeholder="search", options='ctrl.exampleOptions', datasets='ctrl.numbersDataset', ng-model='ctrl.selectedNumber', ng-keypress="($event.which === 13)?ctrl.hitSearch():0")
+            .clear-input(ng-if="ctrl.selectedNumber",ng-click="ctrl.clearValue();")
+            .search-history.col-sm-12.col-md-6.col-lg-8.col-xl-6.no-gutter
+              h5.margin-search Search History
+              .searched-items(ng-repeat="tile in ctrl.searchedHistoryData")
+                a 
+                  p {{tile.product_desc}}
+            .recently-viewed.col-sm-12.col-md-6.col-lg-4.col-xl-6.no-gutter
+              h5 Recently Viewed
+              mediarecentlyviewedcomponent(extra-class="col-sm-12 col-xl-6",list-item="tile",ng-repeat="tile in ctrl.recentlyViewedData")
