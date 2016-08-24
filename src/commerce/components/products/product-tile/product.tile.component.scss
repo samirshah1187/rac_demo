@@ -92,6 +92,9 @@
         background-size: cover;
         cursor: pointer;
     }
+    .center{
+      text-align: center;
+    }
 }
 
   @media all and (min-width: 375px) and (max-width: 767px){
@@ -99,11 +102,18 @@
           .tile-footer{
               padding-top: 0.875em;
           }
-      }
+          .category-tile{
+            padding: 1px !important;
+          }
+          .media-favorite-container{
+              position: absolute;
+              top: 5px;
+              right: 5px;
+            }
+          }
   }
   @media all and (min-width: 768px) and (max-width: 1023px){
-      .tile-container{
-      }
+      
   }
 
   @media all and (min-width: 1024px) and (max-width: 1439px){

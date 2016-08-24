@@ -1,7 +1,7 @@
 @import "../../../../../src/stylesheets/partials/variables.scss";
   .tile-container {
       background-color: $gray-lightest;
-      padding: 0;
+      padding: 18px 45px;
   }
   .loadmore{
     float: right;
@@ -12,34 +12,6 @@
       padding: 0 1em;
   }
 
-  #filter {
-    background-color: $gray-dark;
-    min-height: 74.063em;
-    transform: translateX(-110%);
-    transition: opacity 1s linear;
-    position: absolute;
-    opacity: 0;
-
-    &.is-open {
-      position: relative;
-      transform: translateX(0);
-      transition: transform .25s ease-in;
-      opacity: 1;
-    }
-  }
-  #filter.filter-mobile{
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      z-index: 999;
-      overflow: auto;
-      width: 100%;
-      height: 100%;
-      min-height: 0;
-      transition: 0.5s;
-      margin-left: 0;
-
-  }
   #list{
     padding: 0.5em 1em;
   }
@@ -52,176 +24,20 @@
   letter-spacing: -0.1px;
   color: #ffffff;
   }
-  .option-row{
-  	padding: 0.5em 1em 0.5em 2em;
-  }
-  .option-row:hover{
-  	background-color: rgba(0, 138, 176, 0.4);
-  }
-  // .opt-container .option-row:last-of-type{
-  //   padding: 1em 1em 1em 2em;
-  // }
-  .result-text {
-      font-weight: $proxima-thin;
-      font-size: 1.375rem;
-      line-height: 1.41;
-      color: $white;
-      margin-left: 1em;
-      padding-top: 1em;
-  }
-  .opt-container{
-  	    margin: 1.25em -1.875em 0;
-      	background-color: rgba(255, 255, 255, 0.1);
-  }
-  .filter-text , .filter-close {
-      font-weight: $proxima-semibold;
-      font-size: 0.875rem;
-      line-height: 1.57;
-      color: $white;
-      margin-left: 1.5625em;
-      margin-bottom: 0.8em;
-  }
-
-  .filter-close{
-  	float: right;
-      margin-right: 1.5em;
-  }
-
-  .filter-option {
-      font-weight: $proxima-semibold;
-      font-size: 0.875rem;
-      line-height: 1.57;
-      color: $white;
-      margin-left: 1.5625em;
-      margin-top: 0.75em;
-  }
-
-  .selected-option {
-      font-weight: $proxima-thin;
-      font-size: 0.875rem;
-      line-height: 1.57;
-      color: $aqua !important;
-  }
-
-  .color-icon{
-    width: 18px;
-    height: 18px;
-    border: solid 1px $white;
-    border-radius: 50%;
-    float: left;
-    margin-top: 3px;
-  }
-
+  
   .no-outline{
         outline: none;
         background: none;
         border: 0;
         padding: 0;
   }
-  
-  .separator-line-filter {
-      height: 2px;
-      border: solid 1px $gray;
-      margin-top: 0.5em;
+   @media all and (min-width: 375px) and (max-width: 767px){
 
-  }
+    .tile-container {
+      padding-left: 0 !important;
+       padding-right: 0 !important;
+      
+    }
 
-  .option-list-text,.option-list{
-  	  font-weight: $proxima-thin;
-      font-size: 0.875rem;
-      line-height: 1.57;
-      color: $white;
-  }
-  .option-list-text{
-  	padding-left: 1.25em;
-  }
-
-  .dropdown-img-down{
-     background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
-  }
-  .dropdown-img-up{
-    background: url(../../../../../src/assets/images/content/search.png) center no-repeat;
-  }
-
-  .dropdown-container{
-	   float: right;
-    height: 1.625em;
-    width: 1.625em;
-  }
-
-  .float-top{
-    margin-top: -0.5em;
-  }
-
-  .padding-zero{
-    padding: 0 !important;
-  }
-
-  .white{
-  	color: $white;
-    font-size: 0.813em;
-  }
-
-  .filter-row{
-  	margin: 0 1.563em;
-  	padding: 1.15em 0.5em 0;
-  }
-
-  .switch {
-  position: relative;
-  display: inline-block;
-  width: 3.250em;
-  height: 1.875em;
-  float: right;
-}
-
-/* Hide default HTML checkbox */
-.switch input {display:none;}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $gray-lightest;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.625em;
-  width: 1.625em;
-  left: 0px;
-  bottom: 2px;
-  background-color: $white;
-  box-shadow: 0 1px 4px 0 rgba(121, 121, 121, 0.5);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: $aqua;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px $aqua;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(1.625em);
-  -ms-transform: translateX(1.625em);
-  transform: translateX(1.625em);
-}
-
-.slider.round {
-  border-radius: 2.125em;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
+   }
+ 

@@ -1,14 +1,14 @@
 .mediatile.tile-container(class='{{ctrl.extraClass}}')
   .tile.col-sm-12.center.no-gutter(ng-class='{deactivate : ctrl.isDeleted || ctrl.isFavorited && ctrl.ifFavUndoVisible}')
     br
-    span.col-sm-12.bold.no-gutter(style="position: absolute;top: 13%;left: 0;z-index: 1;") {{ctrl.listItem.product_desc}}
+    span.col-sm-12.bold.no-gutter.hidden-sm-down(style="position: absolute;top: 13%;left: 0;z-index: 1;") {{ctrl.listItem.product_desc}}
     .tile-image.col-sm-12.no-gutter
       img(ng-src='{{ctrl.listItem.thumbnail_url}}', alt='img', height='100%', width='100%')
-    .tile-description.col-sm-12.no-gutter
+    .tile-description.col-sm-12.no-gutter.center
       span.col-sm-12.center.bold.no-gutter {{ctrl.listItem.product_name}}      
     hr  
     .tile-icon-container
-      .logo
+      .logo.hidden-sm-down
         img(ng-src='{{ctrl.listItem.product_logo}}', alt='img', height='100%', width='100%')
       //- .logo-share(ng-if='ctrl.ifShareVisible')
       .media-favorite-container(ng-if='ctrl.ifFavoriteVisible', ng-click='ctrl.toggleFavorite()')
@@ -16,12 +16,4 @@
           svg.heart(width='20px', height='18px', viewbox='0 0 24 21', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
             g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
               g#heart-outline(transform='translate(1.000000, 0.000000)', stroke='#999')
-                path#fill(d='M22.3634,0.9763 C19.9054,0.9763 17.1654,1.9943 15.9764,5.2263 C15.8984,5.4373 15.5944,5.4293 15.5214,5.2163 C14.4144,1.9913 11.5714,0.9763 9.1154,0.9763 C4.4974,0.9763 0.7394,5.0363 0.7394,10.0263 C0.7394,12.3713 1.5684,14.5963 3.0754,16.2903 L15.0314,28.2673 C15.4224,28.6583 16.0564,28.6593 16.4484,28.2673 L28.1794,16.5343 C29.8234,14.8303 30.7394,12.5113 30.7394,10.0263 C30.7394,5.0363 26.9814,0.9763 22.3634,0.9763', fill='#ffffff')  
-      .delete-tile(ng-if='ctrl.ifDeleteVisible', ng-click='ctrl.toggleDel();')
-        .media-delete-container
-  .undo-delete(ng-show='ctrl.isDeleted')
-    div(ng-click='ctrl.toggleDel();')
-      button.btn.btn-secondary.undo-btn UNDO
-  .undo-delete(ng-show='ctrl.isFavorited && ctrl.ifFavUndoVisible')
-    div(ng-click='ctrl.toggleFavorite();')
-      button.btn.btn-secondary.undo-btn UNDO
+                path#fill(d='M22.3634,0.9763 C19.9054,0.9763 17.1654,1.9943 15.9764,5.2263 C15.8984,5.4373 15.5944,5.4293 15.5214,5.2163 C14.4144,1.9913 11.5714,0.9763 9.1154,0.9763 C4.4974,0.9763 0.7394,5.0363 0.7394,10.0263 C0.7394,12.3713 1.5684,14.5963 3.0754,16.2903 L15.0314,28.2673 C15.4224,28.6583 16.0564,28.6593 16.4484,28.2673 L28.1794,16.5343 C29.8234,14.8303 30.7394,12.5113 30.7394,10.0263 C30.7394,5.0363 26.9814,0.9763 22.3634,0.9763', fill='#ffffff')
