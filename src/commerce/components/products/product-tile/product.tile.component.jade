@@ -5,6 +5,7 @@
     .tile-image.col-sm-12.no-gutter
       img(ng-src='{{ctrl.listItem.thumbnail_url}}', alt='img', height='100%', width='100%')
     .tile-description.col-sm-12.no-gutter.center
+      span.col-sm-12.tile-description2.center.bold.no-gutter.hidden-md-up {{ctrl.listItem.product_desc}}
       span.col-sm-12.center.bold.no-gutter {{ctrl.listItem.product_name}}      
     hr  
     .tile-icon-container
