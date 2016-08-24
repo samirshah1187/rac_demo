@@ -9,8 +9,8 @@ var ProvidePlugin = require('webpack/lib/ProvidePlugin');
 module.exports = {
   debug: true,
   entry: {
-    vendor: ["babel-polyfill","jquery","tether/dist/js/tether.js","bootstrap/dist/js/bootstrap.min.js"],
-    vendor_angular: ["angular","angular-ui-router","angular-sanitize","angular-ui-mask"],
+    vendor: ["babel-polyfill","jquery","slick-carousel","tether/dist/js/tether.js","bootstrap/dist/js/bootstrap.min.js"],
+    vendor_angular: ["angular","angular-ui-router","angular-sanitize","angular-slick-carousel","angular-ui-mask"],
     bundle: ['./src/app.js'],
   },
   // entry: ['babel-polyfill', './src/app.js'],

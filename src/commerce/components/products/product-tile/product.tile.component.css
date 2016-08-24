@@ -16,8 +16,7 @@
     z-index: 10; }
   /* line 17, /Users/samirshah/Desktop/RAC_Reimagined/src/commerce/components/products/product-tile/product.tile.component.scss */
   .tile-container .tile-image {
-    width: 100%;
-    background-color: #D1D1D1; }
+    width: 100%;}
   /* line 21, /Users/samirshah/Desktop/RAC_Reimagined/src/commerce/components/products/product-tile/product.tile.component.scss */
   .tile-container .tile-image {
     height: auto;
