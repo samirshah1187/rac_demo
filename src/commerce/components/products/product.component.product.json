@@ -130,6 +130,76 @@
                 "product_logo"  : "../../../../src/assets/images/content/view details.png",
                 "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
                 "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12354",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12355",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12356",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12357",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12358",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12359",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
+        },
+        {
+                "product_id"    : "12360",
+                "content_type"  : "video",
+                "thumbnail_url" : "../../../../src/assets/images/content/laptop.png",
+                "product_desc"  : "Lenovo 15.6'' Laptop",
+                "product_name"  : "$108.49",
+                "product_logo"  : "../../../../src/assets/images/content/view details.png",
+                "share_logo"    : "../../../../src/assets/images/content/ic-share-copy-105@3x.png",
+                "isFavorite"    : false
         }
         ]
 }

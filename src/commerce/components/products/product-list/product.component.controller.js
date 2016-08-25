@@ -12,14 +12,10 @@ function productCategoryComponentController(productListComponentService, $stateP
     this.showMore = true;
 
     this.loadMoreData = function(){
+        this.limitVal += 4; 
         if(this.limitVal == self.tileData.data.length){
-            this.limitVal = 8;
-            this.showMore = true;
-        }else{
-            this.limitVal = self.tileData.data.length;
             this.showMore = false;
         }
-        
     }
 
     var promise = productListComponentService.getTileData(this.sourceUrl);
