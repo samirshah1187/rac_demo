@@ -1,2 +1,15 @@
-.footer-nav
-    div This is FooterNAV
+footer.row
+  .col-sm-12
+    .row.row-eq-height.sub-footer
+      .col-md-4.col-sm-12.join-us-container
+        p.join-us Join Us
+        ul.social-toolbar
+          li(ng-repeat='item in ctrl.socialIcons')
+            span(class='{{item.icon_name}}')
+      .col-md-4.col-sm-12.sign-up-container
+        a(href='#') SIGN UP FOR SPECIALS
+      .col-md-4.col-sm-12.img-container
+          img(src='../../../src/assets/images/content/front-center-blog.png')
+  .copyright.col-sm-12
+    p
+      | © 2015 Rent-A-Center® All Rights Reserved. | Privacy Policy | Web Accessibility | ePay Terms | California Transparency in Supply Chains Act

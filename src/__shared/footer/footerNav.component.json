@@ -10,13 +10,23 @@
         "icon_img" : "../../../src/assets/images/css/twitter.svg"
         },
         {
+        "icon_name" : "Youtube",
+        "icon_url" : "https://www.youtube.com",
+        "icon_img" : "../../../src/assets/images/css/twitter.svg"
+        },
+        {
         "icon_name" : "Instagram",
         "icon_url" : "https://www.instagram.com",
         "icon_img" : "../../../src/assets/images/css/instagram.svg"
         },
         {
-        "icon_name" : "Pinterest",
-        "icon_url" : "https://www.pinterest.com",
+        "icon_name" : "Linkedin",
+        "icon_url" : "https://www.linkedin.com",
+        "icon_img" : "../../../src/assets/images/css/pintrest.svg"
+        },
+        {
+        "icon_name" : "Google",
+        "icon_url" : "https://plus.google.com",
         "icon_img" : "../../../src/assets/images/css/pintrest.svg"
         }
 ]

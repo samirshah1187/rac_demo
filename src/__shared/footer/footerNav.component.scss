@@ -1,5 +1,152 @@
 @import "../../stylesheets/partials/variables";
+footer {
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .sub-footer {
+        padding: 20px 60px;
+        /*background-color: #f8f8f8;*/
+    }
+    .join-us-container {
+        .join-us {
+            font-size: 24px;
+            font-weight: 300;
+            color: #383838;
+        }
+        .social-toolbar {
+            list-style-type: none;
+            padding-left: 0px;
+            & li {
+                display: inline-block;
+                margin-right: 15px;
+                & span {
+                    display: inline-block;
+                    width: 32px;
+                    height: 32px;
+                    &.Facebook {
+                        background: url('../../../src/assets/images/content/facebook-circle-gray.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/social-media-01.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                    &.Twitter {
+                        background: url('../../../src/assets/images/content/twitter-circle-gray.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/social-media-03.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                    &.Instagram {
+                        background: url('../../../src/assets/images/content/iconmonstr-instagram-9-240.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/1472138375_instagram_circle.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                    &.Youtube {
+                        background: url('../../../src/assets/images/content/youtube-circle-gray.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/social-media-02.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                    &.Linkedin {
+                        background: url('../../../src/assets/images/content/iconmonstr-linkedin-4-240.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/1472137859_linkedin.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                    &.Google {
+                        background: url('../../../src/assets/images/content/google-circle-gray.png') center no-repeat;
+                        background-size: 100%;
+                        &:hover {
+                            background: url('../../../src/assets/images/content/social-media-04.png') center no-repeat;
+                            background-size: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sign-up-container {
+        text-align: center;
+        padding-top: 50px;
+        a {
+            font-size: 18px;
+            color: #7b7b7b;
+            text-decoration: underline;
+        }
+    }
+    .img-container {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    > .copyright {
+        background-color: #383838;
+        position: relative;
+        height: 26px;
+        font-size: 12px;
+        letter-spacing: -0.2px;
+        color: #abaeaf;
+        text-align: center;
+        padding: 30px 0px;
+        p {
+            margin: 0px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
 
-.footer-nav{
-    
+@media all and (min-width: 375px) and (max-width: 767px) {
+    footer{
+        .sub-footer {
+            padding: 20px 0px !important;
+            display: block !important;
+            & > div{
+                width: 100%;
+            }
+            .img-container{
+                padding: 20px 10px;
+                img{
+                    margin: 0px auto;
+                }
+            }
+            .sign-up-container{
+                padding: 20px 10px;
+                border-top: 1px solid #cdcdcd;
+                border-bottom: 1px solid #cdcdcd;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        .sub-footer {
+            padding: 20px 0px !important;
+
+            .join-us-container {
+                padding-right: 0px;
+                .social-toolbar li {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }

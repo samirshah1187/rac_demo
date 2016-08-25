@@ -5,7 +5,7 @@ var footerNavComponent =  {
     restrict: 'E',
     templateUrl: template,
     controller: controller,
-    controllerAs: 'footernav',
+    controllerAs: 'ctrl',
     bindToController: true
 };
 

@@ -6,6 +6,7 @@ var productHeaderComponentModule = require('../../components/products/product-he
 var productBannerComponentModule = require('../../components/products/product-banner/product.banner.component.module');
 var productTileComponentModule = require('../../components/products/product-tile/product.tile.component.module');
 var productCategoryComponentModule = require('../../components/products/product-list/product.component.module');
+var productRecommendationComponentModule = require('../../components/products/product-recommendation/product.recommendation.module');
 var productNoresultModule = require('../../components/products/product-noresult-found/product.noresult.component.module');
 
 
@@ -15,6 +16,7 @@ var productViewerModule = angular.module('productViewerModule', [
   productTileComponentModule.name,
   productHeaderComponentModule.name,
   productCategoryComponentModule.name,
+  productRecommendationComponentModule.name,
   productNoresultModule.name
 ])
     .config(($stateProvider) => {
