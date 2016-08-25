@@ -1,4 +1,4 @@
-var template =require('./headerNav.jade');
+var template =require('./headerNav.html');
 var controller =require('./headerNav.controller');
 
 var headerNavComponent =  {
