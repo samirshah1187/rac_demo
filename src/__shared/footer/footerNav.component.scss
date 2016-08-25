@@ -1,5 +1,7 @@
 @import "../../stylesheets/partials/variables";
 footer {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     .row-eq-height {
         display: -webkit-box;
         display: -webkit-flex;
@@ -114,20 +116,23 @@ footer {
 }
 
 @media all and (min-width: 375px) and (max-width: 767px) {
-    footer{
+    footer {
         .sub-footer {
             padding: 20px 0px !important;
             display: block !important;
-            & > div{
+            & > div {
                 width: 100%;
             }
-            .img-container{
+            .img-container {
                 padding: 20px 10px;
-                img{
+                img {
                     margin: 0px auto;
                 }
             }
-            .sign-up-container{
+            .join-us-container {
+                text-align: center;
+            }
+            .sign-up-container {
                 padding: 20px 10px;
                 border-top: 1px solid #cdcdcd;
                 border-bottom: 1px solid #cdcdcd;
@@ -140,7 +145,6 @@ footer {
     footer {
         .sub-footer {
             padding: 20px 0px !important;
-
             .join-us-container {
                 padding-right: 0px;
                 .social-toolbar li {
