@@ -10,7 +10,7 @@ footer {
     }
     .sub-footer {
         padding: 20px 60px;
-        /*background-color: #f8f8f8;*/
+        background-color: #f8f8f8;
     }
     .join-us-container {
         .join-us {
@@ -96,6 +96,7 @@ footer {
         img {
             max-width: 100%;
         }
+        mix-blend-mode: multiply;
     }
     > .copyright {
         background-color: #383838;
