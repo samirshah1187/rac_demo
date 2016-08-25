@@ -28,6 +28,10 @@ footer {
                     display: inline-block;
                     width: 32px;
                     height: 32px;
+                    transition-property: all;
+                    transition-duration: .5s;
+                    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                    transition-delay: 0s;
                     &.Facebook {
                         background: url('../../../src/assets/images/content/facebook-circle-gray.png') center no-repeat;
                         background-size: 100%;
