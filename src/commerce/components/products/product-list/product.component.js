@@ -10,7 +10,9 @@ var productListComponent = {
     bindings: {
         sourceUrl: '=',
         ifDeleteVisible: '=',
-        ifFavUndoVisible: '='
+        ifFavUndoVisible: '=',
+        limit: '=',
+        ifLoadMoreVisible: '='
     }
 };
 

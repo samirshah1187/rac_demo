@@ -1,0 +1,60 @@
+@import "../../../../../src/stylesheets/partials/variables.scss";
+.product-recommendation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.checklist {
+    width: 83px;
+    height: 15px;
+    font-family: ProximaNova;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #383838;
+}
+
+.line-copy-4 {
+    width: 546.5px;
+    height: 1.5px;
+    border: solid 0.5px #c9c9c9;
+}
+
+@media all and (min-width: 375px) and (max-width: 767px) {
+    .product-recommendation {
+        padding-bottom: 0px;
+        .reco-desc {
+            padding-left: 0;
+            padding-right: 0;
+            .btn-container {
+                padding-top: 0px;
+            }
+            h3,
+            h2,
+            h1,
+            p,
+            .btn-container {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .reco-desc {
+        h3 {
+            padding-top: 0px;
+            padding-bottom: 10px;
+            font-size: 1.25em;
+        }
+        h2 {
+            font-size: 1.75em;
+        }
+        .btn-container {
+            padding-top: 40px;
+        }
+        p {
+            font-size: 0.8em;
+            padding-right: 0px;
+        }
+    }
+}

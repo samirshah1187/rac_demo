@@ -8,12 +8,11 @@ function productCategoryComponentController(productListComponentService, $stateP
     self.isMobileMode = false;
     self.filterHeight = '';
 
-    this.limitVal = 8;
     this.showMore = true;
 
     this.loadMoreData = function(){
-        this.limitVal += 4; 
-        if(this.limitVal == self.tileData.data.length){
+        this.limit += 4; 
+        if(this.limit == self.tileData.data.length){
             this.showMore = false;
         }
     }

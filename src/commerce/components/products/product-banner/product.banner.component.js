@@ -12,6 +12,7 @@ var productBannerComponent = {
         categoryName: "@",
         uploadIcon: "=",
         bannerUrl: "=",
+        bannerMobileUrl: "=",
         content: "@"
     }
 };

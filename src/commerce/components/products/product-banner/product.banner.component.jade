@@ -1,7 +1,8 @@
 .media-category-banner-container.clearfix.col-sm-12(ng-init='ctrl.init()')
   .row
     .col-sm-12(ng-class="{'category-header': !ctrl.onlyBanner, 'category-only-header': ctrl.onlyBanner}")
-      .category-header-background(class='{{ctrl.bannerClass}}', ng-style="{'background-image': 'url({{ctrl.bannerUrl}})'}")
+      .category-header-background.hidden-sm-down(class='{{ctrl.bannerClass}}', ng-style="{'background-image': 'url({{ctrl.bannerUrl}})'}")
+      .category-header-background.hidden-md-up(class='{{ctrl.bannerClass}}', ng-style="{'background-image': 'url({{ctrl.bannerMobileUrl}})'}")  
       .category-name.col-sm-12(ng-if='ctrl.onlyBanner')
         .row.col-sm-10.reset
           .header.col-sm-8.col-md-9.col-lg-4.col-xl-3 WELCOME TO {{ctrl.categoryName | uppercase}}
