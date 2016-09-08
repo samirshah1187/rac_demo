@@ -1,5 +1,5 @@
 .mediatile.tile-container(class='{{ctrl.extraClass}}')
-  .tile.col-sm-12.center.no-gutter(ng-class='{deactivate : ctrl.isDeleted || ctrl.isFavorited && ctrl.ifFavUndoVisible}')
+  .tile.col-sm-12.center.no-gutter(ng-class='{selectedtile : ctrl.isFavorited}')
     br
     span.col-sm-12.bold.no-gutter.hidden-sm-down(style="position: absolute;top: 13%;left: 0;z-index: 1;") {{ctrl.listItem.product_desc}}
     .tile-image.col-sm-12.no-gutter
